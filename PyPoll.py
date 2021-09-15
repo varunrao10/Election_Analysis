@@ -48,6 +48,18 @@ with open(file_to_load) as election_data:
 
         #Incrementing votes for candidates
         candidate_votes[candidate_name] += 1
+
+#Write results to election_analysis.txt
+with open(file_to_save, "w") as txt_file:
+  # Print the final vote count to the terminal.
+    election_results = (
+        f"\nElection Results\n"
+        f"-------------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"-------------------------\n")
+    print(election_results, end="")
+    # Save the final vote count to the text file.
+    txt_file.write(election_results)
     
     """""
     #Print the total votes.
@@ -76,7 +88,9 @@ with open(file_to_load) as election_data:
             winning_candidate = candidate_name
 
         #print candidate name and percentage of votes and vote count
-        print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        candidate_results = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+        print(candidate_results)
+        txt_file.write(candidate_results)
     
     winning_candidate_summary = (
         f"-------------------------\n"
@@ -85,16 +99,11 @@ with open(file_to_load) as election_data:
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
     print(winning_candidate_summary)
-
-
-
-
-
+    txt_file.write(winning_candidate_summary)
 
 
 """
 # Using the with statement open the file as a text file.
-with open(file_to_save, "w") as txt_file:
     # Write three counties to the file.
     txt_file.write("Counties in the Election")
     txt_file.write("\n------------------------\n")
@@ -104,4 +113,4 @@ with open(file_to_save, "w") as txt_file:
 #2. A complete list of candidates who recieved votes (DONE)
 #3. The percentage of votes each candidate won (DONE)
 #4. The total number of votes each candidate won (DONE)
-#5. The winner of the election based on popular vote    
+#5. The winner of the election based on popular vote (DONE)  
