@@ -20,4 +20,6 @@ In this case it would be the election results and the specific details pertainin
     - ![Winner Stats](Resources/Winner_Stats.PNG)
 
 ## Election-Audit Summary:
+Can generalize the headers and remove the hard coded references to county to make it work for state/provincial elections.
+In the program and the dataset we can introduce the concept of a political party and add additional logic to obtain the maximum number of winning candidates for a political party
 
