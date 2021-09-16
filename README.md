@@ -10,9 +10,12 @@ In this case it would be the election results and the specific details pertainin
     - ![Number Of Votes](Resources/Total_Votes.PNG)
 2. Number of votes and percentage of total votes for each county in the precinct 
     - ![County Stats](Resources/County_Stats.PNG)
-- County with the largest number of votes ![County with Largest Turnout](Resources/County_Most_Votes.PNG)
-- Number of votes and percentage of total votes each candidate received ![Candidate Stats](Resources/Candidate_Stats.PNG)
-- Winner of the election, their vote count and percentage of total votes ![Winner Stats](Resources/Winner_Stats.PNG)
+3. County with the largest number of votes 
+    - ![County with Largest Turnout](Resources/County_Most_Votes.PNG)
+4. Number of votes and percentage of total votes each candidate received 
+    - ![Candidate Stats](Resources/Candidate_Stats.PNG)
+5. Winner of the election, their vote count and percentage of total votes 
+    - ![Winner Stats](Resources/Winner_Stats.PNG)
 
 ## Election-Audit Summary:
 
